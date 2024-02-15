@@ -27,20 +27,20 @@ const bruno = new Pessoa("Bruno", 15);
 // addClass(classe), adiciona a classe a todos os elementos
 // removeClass(classe), remove a classe a todos os elementos
 
-function DOM(seletor) {
-  const elementList = document.querySelectorAll(seletor);
-  this.elements = elementList;
+function Dom(seletor) {
+  const listaDeelementos = document.querySelectorAll(seletor);
+  this.elements = listaDeelementos;
   this.addClass = function (classe) {
-    elementList.forEach((element) => {
-      element.classList.add(classe);
+    listaDeelementos.forEach((item) => {
+      item.classList.add(classe);
     });
   };
   this.removeClass = function (classe) {
-    elementList.forEach((element) => {
-      element.classList.remove(classe);
+    listaDeelementos.forEach((item) => {
+      item.classList.remove(classe);
     });
   };
 }
-const listaItens = new DOM("li");
-listaItens.addClass("active");
-listaItens.removeClass("active");
+const listaItens = new Dom("ul");
+listaItens.addClass("ativada");
+listaItens.removeClass("ativada");
