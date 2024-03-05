@@ -8,7 +8,7 @@ const carros = ['Ford', 'Fiat', 'VW', 'Honda'];
 
 //---------------------------------------------------------------------------------
 
-console.log(carros); // ['Ford', 'Kia', 'Mustang', 'Ferrari', 'Honda']
+//console.log(carros); // ['Ford', 'Kia', 'Mustang', 'Ferrari', 'Honda']
 // Abaixo estamos incluindo no array 0 o Ferrari e estmos removendo 4 itens do nosso array 
 console.log(carros.splice(0, 4, 'Ferrari')); // ['Fiat', 'VW']
 console.log(carros) // Ferrai
