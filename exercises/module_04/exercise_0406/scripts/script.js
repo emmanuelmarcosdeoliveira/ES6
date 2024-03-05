@@ -1,7 +1,7 @@
 const comidas = ['Pizza', 'Frango', 'Carne', 'Macarrão'];
 // Remova o primeiro valor de comidas e coloque em uma variável;
-const newcomidas  = comidas.shift()
-console.log(newcomidas)
+const removendoPrimeiroItem  = comidas.shift()
+console.log(removendoPrimeiroItem)
 // Remova o último valor de comidas e coloque em uma variável
 const removeComidas  = comidas.pop()
 console.log(removeComidas)
