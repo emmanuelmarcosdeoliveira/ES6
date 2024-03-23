@@ -1,3 +1,2 @@
-*.html
-*.css
-img
+classes/*.html
+exercises/*.html
