@@ -7,6 +7,7 @@
   margin-top: 2rem;
   margin-bottom: 0.5rem;
   color: var(--cor-4);
+  cursor: pointer;
 }
 .list-faq dt::before {
   content: "";

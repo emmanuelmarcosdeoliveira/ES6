@@ -16,3 +16,29 @@
     }
   }
 }
+/* Styles Accordions List */
+.js .js-accordion dd {
+  display: none;
+}
+.js-accordion dt::after {
+  content: "▼";
+  margin-left: 10px;
+}
+.js-accordion dt.active::after {
+  content: "▲";
+}
+.js-accordion dd.active {
+  display: block;
+  animation: slideDow .5s ease-in-out forwards;
+}
+
+@keyframes slideDow {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 400px;
+  }
+}
