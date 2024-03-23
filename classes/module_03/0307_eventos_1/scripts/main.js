@@ -13,7 +13,7 @@ function callbackLista(event) {
   console.log(event.type);
 }
 
-const listaImagens = document.querySelector(".animais-list");
+const listaImagens = document.querySelector(".animals-list");
 console.log(listaImagens);
 listaImagens.addEventListener("click", callbackLista);
 

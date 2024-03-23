@@ -1,4 +1,4 @@
-const listaAnimais = document.querySelector(".animais-list");
+const listaAnimais = document.querySelector(".animals-list");
 const height = listaAnimais.scrollHeight;
 console.log(height);
 // Acima estamos pegando a altura do elemento das imagens dos animais com seu scroll
@@ -24,7 +24,6 @@ console
   //window.outerHeight // pega o valor total da tela (pega a barra superior do navegador)
   // window.pageXOffset // distancia que já foi dada de scroll X horizontyal , Y vertical
   ();
-
 
 if (window.innerWidth < 600) {
   console.log("a tela é menor");

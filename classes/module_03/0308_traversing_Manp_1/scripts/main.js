@@ -1,7 +1,7 @@
 const h1 = document.querySelector("h1");
 //console.log(h1.innerHTML);
 
-const animaisLista = document.querySelector(".animais-list");
+const animaisLista = document.querySelector(".animals-list");
 //console.log(animaisLista.innerText);
 
 const animaisDescricao = document.querySelector(".description-animais");
@@ -9,7 +9,7 @@ const animaisDescricao = document.querySelector(".description-animais");
 
 h1.outerHTML = "<h3> Novo Titulo </h3>";
 
-const lista = document.querySelector(".animais-list");
+const lista = document.querySelector(".animals-list");
 console.log(lista.children[--lista.children.length]);
 console.log(lista.querySelector("li:last-child"));
 console.log(lista.childNodes);
