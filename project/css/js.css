@@ -29,9 +29,8 @@
 }
 .js-accordion dd.active {
   display: block;
-  animation: slideDow .5s ease-in-out forwards;
+  animation: slideDow .5s forwards;
 }
-
 @keyframes slideDow {
   from {
     opacity: 0;
@@ -39,6 +38,6 @@
   }
   to {
     opacity: 1;
-    max-height: 400px;
+    max-height: 200px;
   }
 }
