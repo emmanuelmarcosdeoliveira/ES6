@@ -55,10 +55,10 @@ function initScroll() {
       behavior: "smooth",
       block: "start",
     });
-    //Forma Alternativa
-    // const topo = section.offsetTop;
+    //Alternative form
+    // const top = section.offsetTop;
     // window.scrollTo({
-    //   top: topo,
+    //   top: top,
     //   behavior: "smooth",
     // });
   }
@@ -67,4 +67,28 @@ function initScroll() {
   });
 }
 initScroll();
+//---------------------------------------------------------------------
+// animation on Scroll
+//---------------------------------------------------------------------
+function initAnimationScroll() {
+  const sections = document.querySelectorAll(".js-scroll");
+
+  if (sections.length) {
+    const windowMetade = window.innerHeight * 0.6;
+    function animaScroll() {
+      sections.forEach((section) => {
+        const sectionTop = section.getBoundingClientRect().top;
+        const isSectionVisible = sectionTop - windowMetade < 0;
+        if (isSectionVisible) {
+          section.classList.add("active");
+        } else {
+          section.classList.remove("active");
+        }
+      });
+    }
+  }
+  animaScroll();
+  window.addEventListener("scroll", animaScroll);
+}
+initAnimationScroll();
 //---------------------------------------------------------------------

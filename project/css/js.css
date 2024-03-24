@@ -29,7 +29,7 @@
 }
 .js-accordion dd.active {
   display: block;
-  animation: slideDow .5s forwards;
+  animation: slideDow 0.5s forwards;
 }
 @keyframes slideDow {
   from {
@@ -40,4 +40,15 @@
     opacity: 1;
     max-height: 200px;
   }
+}
+/* Styles anima Scroll */
+.js .js-scroll {
+  opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+  transition: 0.3s;
+}
+
+.js .js-scroll.active {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
 }
