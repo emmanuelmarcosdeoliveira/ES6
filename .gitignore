@@ -1,2 +1,7 @@
 classes/*.html
 exercises/*.html
+exercises/module_05/exercise_0502/project/css/**/*.css
+exercises/module_05/exercise_0502/project/*.html
+exercises/module_05/exercise_0502/project/img/*.jpg
+exercises/module_05/exercise_0502/project/img/*.png
+exercises/module_05/exercise_0502/project/scripts/*.js

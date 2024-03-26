@@ -2,17 +2,15 @@
 // function activeTabs
 //---------------------------------------------------------------------
 function activeTabs() {
-  const tabMenu = document.querySelectorAll("[data-tab='menu'] li");
-  const tabContent = document.querySelectorAll("[data-tab='content'] section");
-  console.log(tabContent);
+  const tabMenu = document.querySelectorAll(".js-tabMenu li");
+  const tabContent = document.querySelectorAll(".js-tabContent section");
   tabContent[0].classList.add("active");
   if (tabMenu.length && tabContent.length) {
     function activeTab(index) {
       tabContent.forEach((section) => {
         section.classList.remove("active");
       });
-      const direcao = tabContent[index].dataset.anime;
-      tabContent[index].classList.add("active", direcao);
+      tabContent[index].classList.add("active");
     }
     tabMenu.forEach((itemMenu, index) => {
       itemMenu.addEventListener("click", () => {
@@ -26,7 +24,7 @@ activeTabs();
 // function accordions-list
 //---------------------------------------------------------------------
 function initAccordion() {
-  const accordionList = document.querySelectorAll("[data-anime='accordion'] dt");
+  const accordionList = document.querySelectorAll(".js-accordion dt");
   const activeClass = "active";
 
   if (accordionList.length) {
@@ -47,7 +45,7 @@ initAccordion();
 // Scroll suave link intenro
 //---------------------------------------------------------------------
 function initScroll() {
-  const linksInterno = document.querySelectorAll('[data-menu="smoth"] a[href^="#"]');
+  const linksInterno = document.querySelectorAll('.js-menu a[href^="#"]');
 
   function scrollToSection(event) {
     event.preventDefault();
@@ -73,8 +71,9 @@ initScroll();
 // animation on Scroll
 //---------------------------------------------------------------------
 function initAnimationScroll() {
-  const sections = document.querySelectorAll("[data-anime='scroll']");
-    if (sections.length) {
+  const sections = document.querySelectorAll(".js-scroll");
+
+  if (sections.length) {
     const windowMetade = window.innerHeight * 0.6;
     function animaScroll() {
       sections.forEach((section) => {

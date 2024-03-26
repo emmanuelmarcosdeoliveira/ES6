@@ -1,0 +1,58 @@
+/* Styles by TabContent */
+.js .js-tabContent section {
+  display: none;
+}
+.js-tabContent section.active {
+  display: block;
+  animation: show 0.6s forwards;
+}
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+    to {
+      opacity: 1;
+      transform: translate3d(0px, 0 0);
+    }
+  }
+}
+/* Styles Accordions List */
+.js .js-accordion dd {
+  display: none;
+}
+.js-accordion dt::after {
+  content: "▼";
+  margin-left: 10px;
+}
+.js-accordion dt.active::after {
+  content: "▲";
+}
+.js-accordion dd.active {
+  display: block;
+  animation: slideDow 0.5s forwards;
+}
+@keyframes slideDow {
+  from {
+    opacity: 0;
+    max-height: 0;
+  }
+  to {
+    opacity: 1;
+    max-height: 200px;
+  }
+}
+/* Styles anima Scroll */
+.js .js-scroll {
+  opacity: 0;
+  transform: translate3d(-30px, 0, 0);
+  transition: 0.3s;
+}
+
+.js .js-scroll.active {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+[data-cor^='azul']{
+  background-color:red;
+}
