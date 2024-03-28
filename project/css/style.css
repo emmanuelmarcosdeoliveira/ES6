@@ -1,13 +1,6 @@
 /* Utility */
-@import "../css/utility/reset.css";
-@import "../css/utility/utility.css";
-@import "../css/utility/global.css";
-@import "../css/nav/menu.css";
+@import "./utility/index.css";
 /* Page Sections */
-@import "../css/section/animais.css";
-@import "../css/section/faq.css";
-@import "../css/section/contato.css";
-/* Responsividade */
-@import "../css/responsive/responisve.css";
-/* Styles by JavaScript */
-@import "./js.css"
+@import "./section/index.css";
+/* Styles JavaScripts */
+@import "./styles_js/index.css";
